@@ -11,7 +11,7 @@ ob du die Befehle eintippen kannst, sondern auch, ob du verstanden hast, was du 
 ## Wichtige Regeln – bitte zuerst lesen!
 
 1. Alle deine Ergebnisse speicherst du im Ordner **`Ergebnisse`** auf deinem Laptop.
-   Diesen Ordner erstellst du in Aufgabe 0.
+   Dieser Ordner ist schon vorbereitet.
 2. Jede Aufgabe hat einen **Namen**, zum Beispiel `aufgabe1_betriebssystem`.
    Deine Datei für diese Aufgabe heisst genau gleich, mit **`.txt`** am Ende:
    `aufgabe1_betriebssystem.txt`
@@ -23,7 +23,7 @@ ob du die Befehle eintippen kannst, sondern auch, ob du verstanden hast, was du 
 
 | Nr. | Name der Aufgabe (= Dateiname)  | Thema                         | Zeit   |
 |-----|---------------------------------|-------------------------------|--------|
-| 0   | –                               | Vorbereitung                  | 15 Min |
+| 0   | –                               | Vorbereitung                  | 10 Min |
 | 1   | `aufgabe1_betriebssystem`       | Was ist Linux?                | 15 Min |
 | 2   | `aufgabe2_terminal`             | Erste Befehle                 | 15 Min |
 | 3   | `aufgabe3_ordner`               | Ordner und Pfade              | 20 Min |
@@ -69,9 +69,6 @@ Erst mit Enter wird der Befehl ausgeführt.
 | `>`     | `Shift` + `<` (Taste links neben `Y`)                             |
 | `_`     | `Shift` + `-`                                                     |
 | `"`     | `Shift` + `2`                                                     |
-| `:`     | `Shift` + `.`                                                     |
-| `\|`    | `AltGr` + `7` (ein senkrechter Strich)                            |
-| `<`     | Taste links neben `Y`                                             |
 | `(` `)` | `Shift` + `8` und `Shift` + `9`                                   |
 
 ### Zwei Tricks, die dir viel Arbeit sparen
@@ -80,37 +77,12 @@ Erst mit Enter wird der Befehl ausgeführt.
 - **Tabulator-Taste `⇥`** (links neben `Q`): ergänzt Namen von Dateien und Ordnern automatisch.
   Tippe z. B. `cd linux-a` und drücke `⇥` – der Rest wird ergänzt.
 
-### Die Übungsdateien herunterladen
+### Deine Übungsdateien
 
-Für diesen Auftrag brauchst du Übungsdateien. Du lädst sie mit einem einzigen Befehl aus dem
-Internet herunter. **Kopiere** diesen Befehl am besten (er ist lang!) oder tippe ihn ganz genau ab.
-Alles gehört in **eine** Zeile. Drücke danach Enter:
+Auf deinem Laptop ist schon alles vorbereitet. In deinem persönlichen Ordner gibt es zwei Ordner:
 
-```
-bash <(curl -fsSL https://raw.githubusercontent.com/zeliharuya/linux-task/main/setup.sh || wget -qO- https://raw.githubusercontent.com/zeliharuya/linux-task/main/setup.sh)
-```
-
-Was passiert dabei?
-
-- `curl` und `wget` sind zwei Programme, die Dateien aus dem Internet herunterladen. Die Adresse
-  dahinter sagt, welche Datei. Nicht auf jedem Computer sind beide installiert.
-- `||` bedeutet «oder»: Wenn `curl` nicht funktioniert, wird `wget` versucht.
-  Erscheint die Meldung `curl: command not found`, ist das also **kein Problem**.
-- Die Buchstaben mit Bindestrich (`-fsSL`, `-qO-`) sind **Optionen**. Sie sagen den Programmen,
-  dass sie still arbeiten sollen. Bei `-qO-` ist das Zeichen in der Mitte ein grosses **O** wie
-  «Otto», keine Null.
-- `bash <( ... )` führt die heruntergeladene Datei aus. Sie erstellt deine Übungsdateien und
-  installiert Programme, die noch fehlen.
-
-**Passwort?** Wenn ein Programm fehlt, fragt der Computer vielleicht nach deinem Passwort.
-Tippe es ein und drücke Enter. Beim Tippen siehst du **keine Zeichen** – das ist normal.
-Kennst du das Passwort nicht, melde dich bei der Betreuungsperson.
-
-Wenn alles geklappt hat, steht am Schluss **«Fertig!»**. Jetzt hast du in deinem persönlichen
-Ordner zwei neue Ordner: `linux-auftrag` (die Übungsdateien) und `Ergebnisse` (für deine Antworten).
-
-> Steht nicht «Fertig!» da? Kontrolliere den Befehl Buchstabe für Buchstabe. Mit der
-> Pfeiltaste `↑` holst du ihn zurück und kannst ihn verbessern.
+- `linux-auftrag` – darin sind die Übungsdateien für die Aufgaben.
+- `Ergebnisse` – hier speicherst du deine Antworten.
 
 ### Antworten schreiben mit dem Editor «nano»
 

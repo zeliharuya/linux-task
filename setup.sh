@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Richtet die Übungsdateien für den Linux-Auftrag ein.
 #
-# Die Schüler/innen starten es selbst in Aufgabe 0 (lädt das Skript mit curl oder wget herunter
-# und führt es aus):
+# Die Betreuungsperson führt es vor dem Austeilen auf jedem Laptop aus (lädt das Skript mit curl
+# oder wget herunter und führt es aus; mit «--ergebnisse-leeren» am Schluss für eine neue Gruppe):
 #   bash <(curl -fsSL https://raw.githubusercontent.com/zeliharuya/linux-task/main/setup.sh || wget -qO- https://raw.githubusercontent.com/zeliharuya/linux-task/main/setup.sh)
 #
 # Lokal:
@@ -43,7 +43,7 @@ installiere_fehlende() {
     if [[ $EUID -eq 0 ]]; then
         bash -c "$befehl"
     elif command -v sudo >/dev/null; then
-        echo "Gib dein Passwort ein und drücke Enter. Beim Tippen siehst du keine Zeichen – das ist normal."
+        echo "Dafür braucht es das sudo-Passwort."
         sudo bash -c "$befehl"
     else
         return 1
@@ -171,16 +171,16 @@ dekodiere 'R3JhdHVsaWVyZSEgRHUgaGFzdCBkZW4gZWNodGVuIFNjaGF0eiBnZWZ1bmRlbiEKRGFzI
     > "$BASIS/schatzsuche/berg/hoehle/zauberkiste.txt"
 
 echo
-echo "Fertig! Deine Übungsdateien liegen jetzt im Ordner: $BASIS"
-echo "Deine Ergebnisse speicherst du im Ordner:           $ERGEBNISSE"
+echo "Fertig! Übungsdateien: $BASIS"
+echo "        Ergebnisse:     $ERGEBNISSE"
 if [[ -n "$(ls -A "$ERGEBNISSE")" ]]; then
     echo
-    echo "Hinweis: Im Ordner Ergebnisse liegen schon Dateien."
-    echo "Wenn das nicht deine eigenen sind, melde dich bei der Betreuungsperson."
+    echo "Hinweis: In $ERGEBNISSE liegen noch Dateien (frühere Gruppe?)."
+    echo "Zuerst einsammeln, dann den Befehl nochmals mit «--ergebnisse-leeren» am Schluss ausführen."
 fi
 if ! command -v nano >/dev/null; then
     echo
-    echo "ACHTUNG: Das Programm 'nano' fehlt. Melde dich bei der Betreuungsperson."
+    echo "ACHTUNG: Der Editor 'nano' fehlt und konnte nicht installiert werden. Bitte von Hand installieren."
 fi
 
 # Das Skript wird nach dem Einrichten nicht mehr gebraucht und löscht sich selbst.
