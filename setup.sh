@@ -102,7 +102,7 @@ cat > "$BASIS/schule/faecher/englisch.txt" <<'EOF'
 Englisch: Vocabulary test on Friday.
 EOF
 
-# --- tierheim/ (Aufgabe 7) ---------------------------------------------------
+# --- tierheim/ (Zusatzaufgabe) -----------------------------------------------
 cat > "$BASIS/tierheim/tierliste.txt" <<'EOF'
 Bello, Hund, 3 Jahre
 Minka, Katze, 2 Jahre

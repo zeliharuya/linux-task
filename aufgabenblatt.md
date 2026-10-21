@@ -23,16 +23,18 @@ ob du die Befehle eintippen kannst, sondern auch, ob du verstanden hast, was du 
 
 | Nr. | Name der Aufgabe (= Dateiname)  | Thema                         | Zeit   |
 |-----|---------------------------------|-------------------------------|--------|
-| 0   | –                               | Vorbereitung                  | 10 Min |
+| 0   | –                               | Vorbereitung                  | 15 Min |
 | 1   | `aufgabe1_betriebssystem`       | Was ist Linux?                | 15 Min |
 | 2   | `aufgabe2_terminal`             | Erste Befehle                 | 15 Min |
 | 3   | `aufgabe3_ordner`               | Ordner und Pfade              | 20 Min |
 | 4   | `aufgabe4_dateien_lesen`        | Dateien anschauen             | 10 Min |
 | 5   | `aufgabe5_ordnung`              | Aufräumen                     | 20 Min |
 | 6   | `aufgabe6_schatzsuche`          | Versteckte Dateien            | 15 Min |
-| 7   | `aufgabe7_suchen`               | Text durchsuchen              | 10 Min |
-| 8   | `aufgabe8_rueckblick`           | Was hast du gelernt?          |  5 Min |
-| ★   | `bonus_hilfe`                   | Nur wenn du Zeit übrig hast   |   –    |
+| 7   | `aufgabe7_rueckblick`           | Was hast du gelernt?          | 10 Min |
+| ★   | `zusatz_suchen`                 | Freiwillig: Text durchsuchen  |   –    |
+| ★   | `bonus_hilfe`                   | Freiwillig: Hilfe benutzen    |   –    |
+
+Die Aufgaben 0 bis 7 sind Pflicht. Die zwei Aufgaben mit ★ machst du nur, wenn du vorher fertig bist.
 
 ---
 
@@ -137,37 +139,29 @@ Unten in nano steht z. B. `^O Speichern`. Das Zeichen `^` bedeutet dort die Tast
 
 ### Lesetext: Was ist ein Betriebssystem und was ist Linux?
 
-Ein Computer besteht aus vielen Teilen: Prozessor, Speicher, Bildschirm, Tastatur und so weiter.
-Damit all diese Teile zusammenarbeiten, braucht der Computer ein **Betriebssystem**. Das
-Betriebssystem ist das wichtigste Programm auf dem Computer. Es startet als Erstes, wenn du den
-Computer einschaltest. Es verwaltet die Dateien, verteilt die Arbeit an den Prozessor und sorgt dafür,
-dass andere Programme – zum Beispiel ein Browser oder ein Spiel – überhaupt laufen können.
-Man kann sagen: Das Betriebssystem ist der **Vermittler** zwischen dir, deinen Programmen und
+Ein Computer besteht aus vielen Teilen, zum Beispiel Prozessor, Speicher und Bildschirm. Damit sie
+zusammenarbeiten, braucht er ein **Betriebssystem**. Es ist das wichtigste Programm: Es startet als
+Erstes, verwaltet die Dateien und sorgt dafür, dass andere Programme wie ein Browser oder ein Spiel
+laufen können. Das Betriebssystem ist also der **Vermittler** zwischen dir, deinen Programmen und
 den Geräten im Computer.
 
-Bekannte Betriebssysteme sind **Windows** von Microsoft und **macOS** von Apple. Ein drittes,
-sehr wichtiges Betriebssystem ist **Linux**. Linux wurde **1991** von einem finnischen Studenten
-namens **Linus Torvalds** gestartet. Er wollte ein eigenes Betriebssystem für seinen Computer
-und veröffentlichte seinen Programmcode im Internet. Bald halfen Tausende Menschen auf der ganzen
-Welt mit, Linux zu verbessern. Das ist bis heute so.
+Bekannte Betriebssysteme sind **Windows** von Microsoft und **macOS** von Apple. Ein drittes ist
+**Linux**. Der finnische Student **Linus Torvalds** startete es **1991** und stellte seinen
+Programmcode ins Internet. Bald halfen Tausende Menschen auf der ganzen Welt mit, Linux zu
+verbessern – bis heute. Linux ist **Open Source**: Jeder darf den Code anschauen, verändern und
+weitergeben, und Linux ist **kostenlos**.
 
-Linux ist **Open Source**. Das heisst: Der Programmcode ist offen. Jeder darf ihn anschauen,
-verändern und weitergeben, und Linux darf **kostenlos** benutzt werden.
+Wahrscheinlich hast du Linux schon benutzt: Es steckt in fast allen **Android-Handys**, in vielen
+Smart-TVs und auf den meisten **Servern** im Internet. Server sind die Computer, auf denen
+Webseiten laufen.
 
-Vielleicht denkst du, dass du Linux noch nie benutzt hast. Das stimmt wahrscheinlich nicht!
-Linux steckt in fast allen **Android-Handys**, in vielen **Smart-TVs**, in WLAN-Routern und sogar
-in Autos. Die meisten **Server** im Internet – das sind die Computer, auf denen Webseiten wie
-Suchmaschinen oder Videoplattformen laufen – benutzen ebenfalls Linux.
+Es gibt viele Versionen von Linux, die **Distributionen**, zum Beispiel Ubuntu oder Debian. Man
+kann es mit Autos vergleichen: Der **Kern** von Linux ist der **Motor**. Verschiedene Firmen bauen
+verschiedene **Autos** um diesen Motor herum. Sie sehen unterschiedlich aus, fahren aber mit dem
+gleichen Motor.
 
-Es gibt nicht nur «ein» Linux, sondern viele verschiedene Versionen. Diese nennt man
-**Distributionen**, zum Beispiel Ubuntu, Debian oder Fedora. Man kann es mit Autos vergleichen:
-Der **Kern** von Linux ist wie ein **Motor**. Verschiedene Firmen bauen verschiedene **Autos** um
-diesen Motor herum – mit anderen Farben, Sitzen und Knöpfen. Alle fahren mit dem gleichen Motor,
-sehen aber unterschiedlich aus.
-
-Die meisten Menschen bedienen einen Computer mit der Maus. Fachleute benutzen bei Linux aber oft
-das **Terminal**, also die Eingabe mit Text-Befehlen. Das hat mehrere Gründe: Viele Aufgaben gehen
-mit einem Befehl **schneller** als mit vielen Mausklicks. Ausserdem haben Server oft **gar keinen
+Fachleute benutzen bei Linux oft das **Terminal**, also Text-Befehle statt der Maus. Viele
+Aufgaben gehen so **schneller** als mit vielen Mausklicks. Ausserdem haben Server oft **keinen
 Bildschirm** – man steuert sie aus der Ferne nur mit Text-Befehlen.
 
 ### Fragen
@@ -392,7 +386,23 @@ Einstellungen, damit sie im Alltag nicht stören.
 
 ---
 
-## Aufgabe 7 – `aufgabe7_suchen`
+## Aufgabe 7 – `aufgabe7_rueckblick`
+
+Erstelle mit nano die Datei `~/Ergebnisse/aufgabe7_rueckblick.txt` (erste Zeile: dein Name) und
+beantworte die Fragen **ohne** auf den Blättern nachzuschauen. Es ist nicht schlimm, wenn du
+nicht alles weisst – schreibe ehrlich, was du noch weisst.
+
+1. Erkläre in je einem kurzen Satz, was diese Befehle machen:
+   `pwd`, `ls`, `cd`, `cat`, `mkdir`, `mv`, `cp`, `rm`
+2. Du bist im Ordner `~/linux-auftrag/schule/faecher`. Du willst in den Ordner
+   `~/linux-auftrag/schule`. Welchen Befehl tippst du?
+3. Deine Kollegin tippt `echo Hallo > gruesse.txt` und danach `echo Tschüss > gruesse.txt`.
+   Was steht danach in der Datei `gruesse.txt`? Begründe.
+4. Was war für dich heute am schwierigsten? Was hat dir am besten gefallen?
+
+---
+
+## ★ Zusatz – `zusatz_suchen` (freiwillig, nur wenn du noch Zeit hast)
 
 ### Lesetext: Text durchsuchen
 
@@ -413,7 +423,7 @@ Im Ordner `~/linux-auftrag/tierheim` liegt die Datei `tierliste.txt`. Darin steh
 eines Tierheims – pro Zeile ein Tier mit Name, Tierart und Alter.
 
 1. Wechsle in den Ordner `tierheim` und schau dir die ganze Liste mit `cat` an.
-2. Schreibe deinen Namen in die Datei `~/Ergebnisse/aufgabe7_suchen.txt`.
+2. Schreibe deinen Namen in die Datei `~/Ergebnisse/zusatz_suchen.txt`.
 3. Suche mit `grep` alle **Katzen** und hänge das Ergebnis an deine Ergebnisdatei an.
 4. Tippe nun `grep katze tierliste.txt` (mit kleinem **k**) und schau, was passiert.
 5. Öffne die Ergebnisdatei mit nano und beantworte unten:
@@ -426,23 +436,7 @@ eines Tierheims – pro Zeile ein Tier mit Name, Tierart und Alter.
 
 ---
 
-## Aufgabe 8 – `aufgabe8_rueckblick`
-
-Erstelle mit nano die Datei `~/Ergebnisse/aufgabe8_rueckblick.txt` (erste Zeile: dein Name) und
-beantworte die Fragen **ohne** auf den Blättern nachzuschauen. Es ist nicht schlimm, wenn du
-nicht alles weisst – schreibe ehrlich, was du noch weisst.
-
-1. Erkläre in je einem kurzen Satz, was diese Befehle machen:
-   `pwd`, `ls`, `cd`, `cat`, `mkdir`, `mv`, `cp`, `rm`, `grep`
-2. Du bist im Ordner `~/linux-auftrag/schule/faecher`. Du willst in den Ordner
-   `~/linux-auftrag/schule`. Welchen Befehl tippst du?
-3. Deine Kollegin tippt `echo Hallo > gruesse.txt` und danach `echo Tschüss > gruesse.txt`.
-   Was steht danach in der Datei `gruesse.txt`? Begründe.
-4. Was war für dich heute am schwierigsten? Was hat dir am besten gefallen?
-
----
-
-## ★ Bonus – `bonus_hilfe` (nur wenn du noch Zeit hast)
+## ★ Bonus – `bonus_hilfe` (freiwillig, nur wenn du noch Zeit hast)
 
 Fast jeder Befehl hat eine eingebaute **Hilfe**. Du rufst sie auf, indem du **`--help`**
 (zwei Bindestriche) hinter den Befehl schreibst, zum Beispiel `ls --help`.
@@ -452,8 +446,8 @@ Erstelle die Datei `~/Ergebnisse/bonus_hilfe.txt` (erste Zeile: dein Name) und b
 
 1. Was macht die Option `-r` beim Befehl `ls`? Suche die Antwort in `ls --help` und probiere es
    im Ordner `~/linux-auftrag/tierheim` oder `~/linux-auftrag` aus.
-2. Was macht die Option `-n` beim Befehl `grep`? Suche in `grep --help` und probiere es mit der
-   Tierliste aus. Wofür könnte das nützlich sein?
+2. Nur wenn du die Zusatzaufgabe gemacht hast: Was macht die Option `-n` beim Befehl `grep`?
+   Suche in `grep --help` und probiere es mit der Tierliste aus. Wofür könnte das nützlich sein?
 
 ---
 
@@ -465,6 +459,6 @@ Kontrolliere mit diesem Befehl, ob alle deine Dateien im Ordner `Ergebnisse` sin
 ls ~/Ergebnisse
 ```
 
-Es sollten mindestens **8 Dateien** sein, deren Namen genau so heissen wie die Aufgaben.
+Es sollten mindestens **7 Dateien** sein (Aufgaben 1 bis 7), deren Namen genau so heissen wie die Aufgaben.
 
 **Gut gemacht – du hast deine ersten Schritte mit Linux gemacht! 🐧**

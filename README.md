@@ -8,7 +8,7 @@ eine Datei im Ordner `~/Ergebnisse`. Der Dateiname ist der Name der Aufgabe.
 
 | Datei | Für wen | Inhalt |
 |---|---|---|
-| `aufgabenblatt.md` | Schüler/innen | Lesetexte und Aufgaben 0–8 plus Bonus |
+| `aufgabenblatt.md` | Schüler/innen | Lesetexte, Aufgaben 0–7 und zwei freiwillige Zusatzaufgaben |
 | `setup.sh` | Schüler/innen | Erstellt die Übungsdateien (wird in Aufgabe 0 heruntergeladen) |
 
 Weiteres Material für die Betreuungsperson liegt nur lokal im Ordner `betreuung/` (siehe
