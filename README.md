@@ -9,6 +9,7 @@ eine Datei im Ordner `~/Ergebnisse`. Der Dateiname ist der Name der Aufgabe.
 | Datei | Für wen | Inhalt |
 |---|---|---|
 | `aufgabenblatt.md` | Schüler/innen | Lesetexte, Aufgaben 0–7 und zwei freiwillige Zusatzaufgaben |
+| `aufgabenblatt.pdf` | Schüler/innen | Das gleiche Aufgabenblatt zum Ausdrucken (A4, jede Aufgabe auf einer neuen Seite) |
 | `setup.sh` | Betreuungsperson | Bereitet einen Laptop vor (Übungsdateien, fehlende Programme) |
 
 Weiteres Material für die Betreuungsperson liegt nur lokal im Ordner `betreuung/` (siehe
@@ -57,7 +58,8 @@ rm -rf ~/Ergebnisse ~/linux-auftrag
 
 ## Aufgabenblatt als PDF
 
-Das Aufgabenblatt sieht in jedem Markdown-Viewer gut aus. Für einen Ausdruck z. B.:
+`aufgabenblatt.pdf` ist fertig zum Ausdrucken. Wenn du `aufgabenblatt.md` änderst, musst du das PDF
+neu erstellen, z. B. so:
 
 ```bash
 pandoc aufgabenblatt.md -o aufgabenblatt.pdf
